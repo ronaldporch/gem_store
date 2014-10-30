@@ -1,3 +1,4 @@
+<!-- Tabs Go Here -->
 <section>
   <ul class="nav nav-pills">
     <li ng-class="{ active:tab.isSet(1) }">
@@ -12,8 +13,7 @@
   </ul>
 
   <!--  Description Tab's Content  -->
-  <div ng-show="tab.isSet(1)" ng-include="'product-description.html'">
-  </div>
+  <product-description ng-show="tab.isSet(1)" ></product-description>
 
   <!--  Spec Tab's Content  -->
   <div product-specs ng-show="tab.isSet(2)"></div>
